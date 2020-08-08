@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid layout</title>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		function view(id)
+		{
+			var a= document.getElementById(id).style.display ;
+			if(a=="block")
+			{
+				document.getElementById(id).style.display = "none";
+			}
+			else
+			{
+				document.getElementById(id).style.display ="block";
+			}
+		}
+	</script>
+</head>
+<body>
+   <div class="nav">
+       <a>Home</a>
+       <a>Services</a>
+       <a>Faqs</a>
+       <a>Gallery</a>
+       <a>Labs</a>
+       <a>About Us</a>
+       <a>Contact us</a>
+       <a style="margin-left: 40%;font-size: 25px;">The Grid Layout</a>
+   </div>
+   <div class="nav2">
+   	 <h2>DESIGNED WITH GRID LAYOUT</h2>
+   	 <h5>CSS grid layout or CSS grid is a technique in Cascading Style Sheets that allows web developers to create complex responsive web design layouts more easily and consistently across browsers. There have been other methods for controlling web page layout methods, such as tables, the box model, and CSS flex box.</h5><!-- From google -->
+   	 <h4>Demo of Grid Layout</h4>
+   	 <div class="grid_nav">
+   	 	<div class="grid">India</div>
+   	 	<div class="grid">Australia</div>
+   	 	<div class="grid">Canada</div>
+   	 	<div class="grid">America</div>
+   	 	<div class="grid">Mexico</div>
+   	 	<div class="grid">United Kindom</div>
+   	 	<div class="grid">Africa</div>
+   	 	<div class="grid">Alaska</div>
+   	 	<div class="grid">Japan</div>
+   	 	<div class="grid">Green Land</div>
+   	 	<div class="grid">Ice Land</div>
+   	 	<div class="grid">Spain</div>
+   	 </div>
+   	 <div class="viewlabs">Click here to view our labs</div>
+   </div>
+   <div class="main">
+   	  <div class="alllabs">
+   	      <h4>Out Labs</h4>
+   	  	  <div onclick="view('lab1i')">Lab 1</div>
+   	  	  <div onclick="view('lab2i')">Lab 2</div>
+   	  	  <div onclick="view('lab3i')">Lab 3</div>
+   	  	  <div onclick="view('lab4i')">Lab 4</div>
+   	  	  <div onclick="view('lab5i')">Lab 5</div>
+   	  	  <div onclick="view('lab6i')">Lab 6</div>
+   	  	  <div onclick="view('lab7i')">Lab 7</div>
+   	  	  <div onclick="view('lab8i')">Project 1</div>
+   	  	  <div onclick="view('lab9i')">Project 2</div>
+   	  </div>
+   	  <div class="labinfo">
+   	  	<div class="labi">
+   	  		Our Labs Information
+   	  	</div>
+   	  	<div class="labgridv">
+   	  	  <div class="grid-div lab1" onclick="view('lab1i')"><img src="lab1.jpeg" id="img">Lab 1<div class="infodiv">hi</div></div>
+   	  	  <div class="grid-div lab2" onclick="view('lab2i')" ><img src="image1.jpg" id="img">Lab 2</div>
+   	  	  <div class="grid-div lab3" onclick="view('lab3i')"><img src="image2.jpg" id="img">Lab 3</div>
+   	  	  <div class="grid-div lab4" onclick="view('lab4i')"><img src="image3.jpg" id="img">Lab 4</div>
+   	  	  <div class="grid-div lab5" onclick="view('lab5i')"><img src="image4.jpg" id="img">Lab 5</div>
+   	  	  <div class="grid-div lab6" onclick="view('lab6i')"><img src="image5.jpg" id="img">Lab 6</div>
+   	  	  <div class="grid-div lab7" onclick="view('lab7i')"><img src="image6.jpg" id="img">Lab 7</div>
+   	  	  <div class="grid-div lab8" onclick="view('lab8i')"><img src="image8.jpg" id="img">Project 1</div>
+   	  	  <div class="grid-div lab9" onclick="view('lab9i')"><img src="image9.jpg" id="img">Project 2</div>
+   	  	</div>
+   	  </div>
+   	  <div class="info">
+   	  	<strong>Information</strong>
+   	  	<div id="lab1i" style="margin-top: 20px;"><h4>Lab1</h4><h5>In this lab we performed the basic things like creating an account on github, adding collaborations.we have cresated branches in our repository, added files to it and remove dsome files and merged some files and finally solved commit confllilctls.</h5></div>
+   	  	<div id="lab2i"><h4>Lab2</h4><h5>In this lab we have solved some programming problems in codewars using javascript Tlanguage like conditional statements, loop statements and Datatype manipulation.</h5></div>
+   	  	<div id="lab3i"><h4>Lab3</h4><h5>In this lab we have added styles to lab 2 like adding webpage title, title, lab description. designed a HTML table using javascript variable which allows adding new rows to it and allows user to remove the rows.</h5></div>
+   	  	<div id="lab4i"><h4>Lab4</h4><h5>Switch has be developed with simple, truly extensible option framework, Redux The framework build on the WordPress setting API,supports a multitude of field types as well as custom error handling, custom field & validation types, and import/export functionality.</h5></div>
+   	  	<div id="lab5i"><h4>Lab5</h4><h5>DescriptionCSS Flexible Box Layout, commonly known as Flexbox, escriptionCSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to</h5></div>
+   	  	<div id="lab6i"><h4>Lab6</h4><h5>escriptionCSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to</h5></div>
+   	  	<div id="lab7i"><h4>Lab7</h4><h5>In this lab we have added styles to lab 2 like adding webpage title, title, lab description. designed a HTML table using javascript variable which allows adding new rows to it and allows user to remove the rows.</h5></div>
+   	  	<div id="lab8i"><h4>Project 1</h4><h5>In this lab we have added styles to lab 2 like adding webpage title, title, lab description. designed a HTML table using javascript variable which allows adding new rows to it and allows user to remove the rows.</h5></div>
+   	  	<div id="lab9i"><h4>Project 2</h4><h5>In this lab we have added styles to lab 2 like adding webpage title, title, lab description. designed a HTML table using javascript variable which allows adding new rows to it and allows user to remove the rows.</h5></div>
+   	  </div>
+   </div>
+   <div id="foot">
+	inspired by : https://sherpablog.marketingsherpa.com/design-2/marketing-101-what-are-grids-design/
+</div>
+</body>
+</html>
